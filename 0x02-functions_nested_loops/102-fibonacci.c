@@ -6,16 +6,17 @@
  */
 int main(void)
 {
-	int i, fib1 = 1, fib2 = 2, next;
+	int i;
+	long fib1 = 1, fib2 = 2, next;
 for (i = 1; i <= 50; i++)
 {
 if (i == 1)
 {
-	printf("%d", fib1);
+	printf("%ld", fib1);
 }
 else
 {
-	printf(", %d", fib1);
+	printf(", %ld", fib1);
 }
 next = fib1 + fib2;
 fib1 = fib2;
