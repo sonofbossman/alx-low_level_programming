@@ -1,6 +1,5 @@
 #include "stdlib.h"
 #include "stdio.h"
-#include "ctype.h"
 /**
  * main - entry of the program
  * @argc: argument count
@@ -21,7 +20,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (!isdigit(*argv[i]))
+			if (*argv[i] < '0' || *argv[i] > '9')
 			{
 				printf("Error\n");
 				return (1);
